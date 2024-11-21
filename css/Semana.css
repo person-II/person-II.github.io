@@ -1,0 +1,269 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.312);
+    box-shadow: 0px 4px 4px #0000001A;
+    flex-shrink: 0; /* sem isso fode o header por algum motivo que nao consegui descobrir 
+    e nao conseguii arrumar sem isso*/
+    margin-bottom: 0.5rem;
+}
+
+header a {
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+}
+
+.icon-voltar, header a {
+    width: 4rem;
+    height: 4rem; 
+}
+
+.invis {
+    width: 4.5rem;
+}
+
+.calendar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.calendar li {
+    display: flex;
+    justify-content: center;
+    color: #005BBC;
+}
+
+.weekday {
+    font-size: 17px;
+    margin-bottom: 0.35rem;
+}
+
+.day {
+    font-size: 15px;
+}
+
+.today {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.today2 {
+    font-weight: 900;
+}
+
+main {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    flex-grow: 1;
+}
+
+.day-week {
+    box-shadow: 0px 4px 4px #0000001A;
+    margin-bottom: 1rem;
+}
+
+.day-week:last-child {
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.label-weekday {
+    font-weight: bold;
+    font-size: 34px;
+    margin: 0rem 2rem;
+    color: #007BFF;
+}
+
+.periodo {
+    margin: 1rem 2rem;
+}
+
+.manha {
+    margin: 0rem 2rem 1rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.horario {
+    font-size: 21px;
+    letter-spacing: 0.15rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.75rem;
+}
+
+.remeds {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.med-item {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 0.75rem 0.5rem;
+    box-shadow: 0px 4px 4px #0000001A;
+}
+
+.icon-capsula {
+    width: 3.6rem;
+    height: 2.3rem;
+    margin-left: -0.25rem;
+}
+
+.icon-seringa {
+    width: 2.5rem;
+    height: 2.2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.4rem;
+}
+
+.icon-comprimido {
+    width: 2.5rem;
+    height: 2.2rem;
+    margin-right: 0.35rem;
+    margin-left: 0.4rem;
+}
+
+.icon-contagotas {
+    width: 2.4rem;
+    height: 2.25rem;
+    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+}
+
+.med-info {
+    flex-grow: 1;
+    margin-left: 0.5rem;
+}
+
+.med-info h4 {
+    font-size: 1.1rem;
+    margin: 0;
+    margin-bottom: 0.35rem;
+}
+
+.med-info p {
+    font-size: 0.85rem;
+    color: gray;
+    margin: 0;
+}
+
+.med-info div {
+    position: absolute; 
+    top: 16rem;
+    left: 13rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.med-info div p {
+    font-size: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    margin-bottom: .55rem;
+}
+
+.unidade { /* coloquei prioridade pq nao tava funcionando nao sei pq, n achei erro, deve ter algm mais proridade*/
+    color: red !important;
+    margin: 0 !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+}
+
+.button-check {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.button-detalhes {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0.25rem;
+    width: 16rem;
+    box-shadow: 0px 2px 2px #0000001A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1.726rem;
+    /* transition: 0.5s ease; */ /* so funciona se eu mudar a heigh no js*/
+}
+
+.button-detalhes ul {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.button-detalhes ul li {
+    display: flex;
+}
+
+.button-detalhes img {
+    transform: scale(0.75);
+}
+
+.collected-info, .bula {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    margin-top: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.bula {
+    text-align: justify;
+    padding: 0 0.75rem;
+    line-height: 1.2rem;
+    font-family: 'Merriweather', serif;
+}
+
+strong {
+    font-weight: bold;
+}

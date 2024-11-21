@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duração e Doses</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/DuracaoDose.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script src="/script/app.js"></script>
+    <script src="/script/DuracaoDose.js"></script>
+</head>
+<body>
+    <header>
+        <a href="FreqIng.html">
+            <img src="/img/icone-voltar.png" alt="seta voltar tela" class="icon-voltar">
+        </a>
+        <div class="invis"></div>
+        <h1>DURAÇÃO E DOSE</h1>
+    </header>
+
+    <main>
+        <section class="dose-input">
+            <select class="scroll-input-num">
+                <option value="" selected disabled hidden>X DOSES</option>
+                <option value="1">1 DOSE</option>
+                <option value="2">2 DOSES</option>
+                <option value="3">3 DOSES</option>
+                <option value="4">4 DOSES</option>
+                <option value="5">5 DOSES</option>
+            </select>
+        </section>
+        <section class="data-inicio">
+            <h2 class="titulo">INÍCIO</h2>
+            <input type="date" class="scroll-input-date">
+            <input type="time" class="scroll-input-time">
+        </section>
+        <section class="data-final">
+            <ul class="linha">
+                <li>
+                    <h2>DATA FINAL</h2>
+                </li>
+                <li>
+                    <button>
+                        <img src="/img/icone-offswitch.png" alt="icone toggle data final" class="icon-toggle">
+                    </button>
+                </li>
+            </ul>
+        </section>
+    </main>
+ 
+    <footer>
+        <div class="icon-container">
+            <a href="index.html">
+                <img src="/img/icone-pilula.png" alt="icone pilula" class="icon pill">
+            </a>
+            <a class="button-add">
+                <img src="/img/icone-checkpreto.png" alt="icone check" class="icon check">
+            </a>
+            <a class="settings">
+                <img src="/img/icone-configuracoes.png" alt="icone configurações" class="icon config">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anexar Receita</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/AnexarRec.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script src="/script/app.js"></script>
+    <script src="/script/AnexarRec.js"></script>
+</head>
+<body>
+    <header>
+        <a href="AddRemed.html">
+            <img src="/img/icone-voltar.png" alt="seta voltar tela" class="icon-voltar">
+        </a>
+        <div class="invis"></div>
+        <h1>ANEXAR RECEITA</h1>
+    </header>
+
+    <main> 
+        <ul class="linha">
+            <!-- <label for="">Arquivo:</label> -->
+            <li><p class="label">Arquivo:</p></li>
+            <li><img src="/img/receita.jpg" alt="anexo receita"></li>
+        </ul>
+        
+        <h2>Coletando Dados do Anexo ...</h2>
+
+        <!-- NAO ACHEI esses atributos no css, ent ficou aqui. 
+         n sei se sao classificados como style ou html -->
+        <svg class="container-svg" 
+        x="0px" 
+        y="0px"
+        viewBox="0 0 50 31.25"
+        preserveAspectRatio='xMidYMid meet'>
+        <path class="track"
+            pathlength="100" 
+            d="M0.625 21.5 h10.25 l3.75 -5.875 l7.375 15 l9.75 -30 l7.375 20.875 v0 h10.25"/>
+        <path class="car"
+            pathlength="100"
+            d="M0.625 21.5 h10.25 l3.75 -5.875 l7.375 15 l9.75 -30 l7.375 20.875 v0 h10.25"/>
+        </svg>
+
+        <section class="infoColetadas hidden">
+            <div class="container">  <!-- tive q colocar div para o marker nao ficar pra fora do main e 
+                                        desalinhar o design, ai coloco o container pra direita-->
+                <ul class="data">
+                    <li><p>Nome do Remédio     &ensp; <em>Ozempic</em></p></li>    
+                    <li><p>Concentração:       &ensp; <em>10mg</em></p></li>
+                    <li><p>Tipo:               &ensp; <em>Comprimido</em></p></li>
+                    <li><p>Data de Início:     &ensp; <em class="date">8 Nov 2024</em></p></li>
+                    <li><p>Data de Finalização:&ensp; <em class="date">8 Dez 2024</em></p></li>
+                    <li><p>Horário:            &ensp; <em class="horario">8:00</em></p></li>
+                    <li><p>Frequência:         &ensp; <em>TODOS OS DIAS</em></p></li>
+                </ul>
+            </div>
+        </section>
+       
+    </main>
+    
+    <footer>
+        <div class="icon-container">
+            <a href="index.html">
+                <img src="/img/icone-pilula.png" alt="icone pilula" class="icon pill">
+            </a>
+            <a class="button-add">
+                <img src="/img/icone-checkpreto.png" alt="icone check" class="icon check">
+            </a>
+            <a class="settings">
+                <img src="/img/icone-configuracoes.png" alt="icone configurações" class="icon config">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
